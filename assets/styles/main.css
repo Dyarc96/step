@@ -6,7 +6,7 @@
 }
 
 html,body {
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .panel {
-	height: 100vh;
+	height: 100%;
 	position: sticky;
 	top: 0;
 	background-position: center;
