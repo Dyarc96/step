@@ -1,0 +1,23 @@
+@font-face {
+    font-family: L10;
+    src: url(../fonts/L10-Regular.woff2);
+}
+
+@font-face {
+    font-family: L10;
+    src: url(../fonts/L10-Bold.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: L10;
+    src: url(../fonts/L10-BoldItalic.woff2);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: L10;
+    src: url(../fonts/L10-RegularItalic.woff2);
+    font-style: italic;
+}
