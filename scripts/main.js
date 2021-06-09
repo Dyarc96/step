@@ -334,3 +334,7 @@ window.addEventListener('load', () => {
         }
     }, 200)
 })
+
+window.addEventListener('resize', () => {
+    ScrollTrigger.refresh()
+})
