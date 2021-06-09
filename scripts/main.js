@@ -280,6 +280,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
+    ScrollTrigger.config({
+        autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // notice "resize" isn't in the list
+    });
+
     gsap.utils.toArray('.panel').forEach((panel, i) => {
         ScrollTrigger.create({
             trigger: panel,
