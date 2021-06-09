@@ -323,6 +323,9 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
     localStorage.clear();
     sessionStorage.clear();
+    let vh = window.innerHeight * 0.01;
+// Then set the custom --vh value to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
     const spinner = document.getElementById('spinner')
     pageState = {
         ...pageState,
