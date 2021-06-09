@@ -280,21 +280,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    ScrollTrigger.config({
-        autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // notice "resize" isn't in the list
-    });
-
     gsap.utils.toArray('.panel').forEach((panel, i) => {
-        ScrollTrigger.create({
-            trigger: panel,
-            onEnter: () => goToSection(i)
-        })
 
         ScrollTrigger.create({
             trigger: panel,
-            start: 'bottom bottom',
+            start: 'top top',
+            pin: true,
+            pinSpacing: false,
             onEnterBack: () => goToSection(i)
         })
+    })
+
+    ScrollTrigger.create({
+        snap: 1 / 4
     })
 
     subscriber.classList.add('hidden')
@@ -323,9 +321,6 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
     localStorage.clear();
     sessionStorage.clear();
-    let vh = window.innerHeight * 0.01;
-// Then set the custom --vh value to the root of the document
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
     const spinner = document.getElementById('spinner')
     pageState = {
         ...pageState,
