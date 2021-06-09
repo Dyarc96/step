@@ -336,5 +336,7 @@ window.addEventListener('load', () => {
 })
 
 window.addEventListener('resize', () => {
-    ScrollTrigger.refresh()
+    setTimeout(() => {
+        ScrollTrigger.refresh()
+    }, 100);
 })
