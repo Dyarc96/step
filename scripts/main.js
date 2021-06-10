@@ -335,7 +335,7 @@ window.addEventListener('load', () => {
     }, 200)
 })
 
-window.addEventListener('resize', () => {
+window.addEventListener('scroll', () => {
     setTimeout(() => {
         console.log('refresh');
         ScrollTrigger.refresh()
