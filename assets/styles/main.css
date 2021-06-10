@@ -15,20 +15,21 @@ body {
 	position: relative;
 }
 
-.wrapper {
+/*.wrapper {*/
+/*	position: absolute;*/
+/*	height: 100%;*/
+/*	width: 100%;*/
+
+/*}*/
+
+.wrapper-relative {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	top: 0.5px;
 	bottom: 0.5px;
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
-.wrapper-relative {
-	position: relative;
-	height: 100%;
-	width: 100%;
+	/*overflow-x: hidden;*/
+	/*overflow-y: auto;*/
 }
 
 .panel {
