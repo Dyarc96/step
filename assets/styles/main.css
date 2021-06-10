@@ -22,8 +22,8 @@ body {
 	height: 100%;
 	top: 0.5px;
 	bottom: 0.5px;
-	/*overflow-x: hidden;*/
-	/*overflow-y: auto;*/
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .wrapper-relative {
