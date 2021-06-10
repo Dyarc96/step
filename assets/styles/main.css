@@ -8,10 +8,18 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 body {
 	margin: 0;
+}
+
+.wrapper {
+	position: absolute;
+	overflow: visible;
+	height: 100%;
+	width: 100%;
 }
 
 .wrapper-relative {
@@ -24,9 +32,6 @@ body {
 	height: 100%;
 	width: 100%;
 	position: sticky;
-	top: 0.5px;
-	bottom: 0.5px;
-
 	background-position: center;
 	background-size: cover;
 }
