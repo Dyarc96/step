@@ -278,23 +278,22 @@ window.addEventListener('DOMContentLoaded', () => {
         document.getElementById('subscriber-button-icon').innerHTML = '&rarr;'
     }
 
-    const wr = document.querySelector('.wrapper-relative');
-
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.utils.toArray('.panel').forEach((panel, i) => {
 
         ScrollTrigger.create({
             trigger: panel,
-            scroller: wr,
             start: 'top top',
+            pin: true,
+            pinSpacing: false,
             onEnterBack: () => goToSection(i)
         })
     })
-    //
-    // ScrollTrigger.create({
-    //     snap: 1 / 4
-    // })
+
+    ScrollTrigger.create({
+        snap: 1 / 4
+    })
 
     subscriber.classList.add('hidden')
 

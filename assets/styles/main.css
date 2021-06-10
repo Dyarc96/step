@@ -8,27 +8,19 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 }
 
 body {
 	margin: 0;
+	position: absolute;
+	top: 0.5px;
+	bottom: 0.5px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .wrapper {
-	position: absolute;
-	top: .5px;
-	bottom: .5px;
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.wrapper-relative {
 	position: relative;
-	overflow-y: scroll;
-
 	height: 100%;
 	width: 100%;
 }
