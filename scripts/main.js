@@ -293,7 +293,8 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     ScrollTrigger.create({
-        snap: 1 / 4
+        snap: 1 / 4,
+        scroller: document.querySelector('.wrapper')
     })
 
     subscriber.classList.add('hidden')
