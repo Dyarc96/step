@@ -12,15 +12,28 @@ html,body {
 
 body {
 	margin: 0;
+	position: relative;
+}
+
+.wrapper {
 	position: absolute;
+	height: 100%;
+	width: 100%;
 	top: 0.5px;
 	bottom: 0.5px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
+.wrapper-relative {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
 .panel {
 	height: 100%;
+	width: 100%;
 	position: sticky;
 	top: 0;
 	background-position: center;
