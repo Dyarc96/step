@@ -12,7 +12,11 @@ html,body {
 
 body {
 	margin: 0;
-	position: relative;
+	position: absolute;
+	top: 0.5px;
+	bottom: 0.5px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .panel {
