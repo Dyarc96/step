@@ -8,6 +8,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 
 body {
@@ -31,7 +32,6 @@ body {
 	height: 100%;
 	width: 100%;
 }
-
 
 .panel {
 	height: 100%;
