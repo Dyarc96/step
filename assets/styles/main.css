@@ -20,14 +20,6 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
-
-/*.wrapper {*/
-/*	position: absolute;*/
-/*	height: 100%;*/
-/*	width: 100%;*/
-
-/*}*/
-
 .wrapper-relative {
 	position: relative;
 	height: 100%;
