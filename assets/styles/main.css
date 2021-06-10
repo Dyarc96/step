@@ -5,11 +5,7 @@
 	box-sizing: border-box;
 }
 
-html {
-	height: 100vh;
-}
-
-body {
+html, body {
 	height: 100%;
 	width: 100%;
 }
@@ -19,19 +15,17 @@ body {
 }
 
 .wrapper-relative {
-	position: absolute;
+	position: relative;
 	height: 100%;
 	width: 100%;
-	top: 0.5px;
-	bottom: 0.5px;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 
 .panel {
 	height: 100%;
 	width: 100%;
 	position: sticky;
+	top: 0.5px;
+	bottom: 0.5px;
 
 	background-position: center;
 	background-size: cover;
