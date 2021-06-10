@@ -8,7 +8,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 body {
@@ -17,13 +17,18 @@ body {
 
 .wrapper {
 	position: absolute;
-	overflow: visible;
+	top: .5px;
+	bottom: .5px;
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .wrapper-relative {
 	position: relative;
+	overflow-y: scroll;
+
 	height: 100%;
 	width: 100%;
 }
