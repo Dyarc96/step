@@ -336,11 +336,3 @@ window.addEventListener('load', () => {
         }
     }, 200)
 })
-
-window.addEventListener('scroll', () => {
-    setTimeout(() => {
-        console.log('refresh');
-        ScrollTrigger.refresh()
-        ScrollTrigger.update()
-    }, 500);
-})
