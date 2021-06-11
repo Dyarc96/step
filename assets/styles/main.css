@@ -13,7 +13,7 @@ html,body {
 
 body {
 	margin: 0;
-	position: relative;
+	position: fixed;
 }
 
 .wrapper {
@@ -238,13 +238,16 @@ body {
 .video__player {
 	width: 90%;
 	outline: none;
+	height: 100%;
 }
 
 .video__container {
 	display: flex;
 	justify-content: center;
 	max-width: 1200px;
+	height: auto;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 /* ----- Footer ----- */
