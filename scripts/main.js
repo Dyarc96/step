@@ -55,7 +55,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const subscriber = document.getElementById('subscriber'),
         notifyButton = document.getElementById('newsletter-button'),
         arrowUp = document.getElementById('arrow-up'),
-        arrowDown = document.getElementById('arrow-down')
+        arrowDown = document.getElementById('arrow-down'),
+        width = window.innerWidth
 
     function setSectionContent() {
         const index = Math.round(window.scrollY / window.innerHeight)
@@ -285,7 +286,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ScrollTrigger.create({
             trigger: panel,
             start: 'top top',
-            pin: false,
+            pin: width >= 1080,
             pinSpacing: false,
             scroller: document.querySelector('.wrapper'),
             onEnterBack: () => goToSection(i)
