@@ -282,27 +282,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.utils.toArray('.panel').forEach((panel, i) => {
-
-        ScrollTrigger.create({
-            trigger: panel,
-            start: 'top top',
-            pin: width >= 1080,
-            pinSpacing: false,
-            scroller: document.querySelector('.wrapper'),
-            onEnterBack: () => goToSection(i)
-        })
-
-        ScrollTrigger.create({
-            trigger: panel,
-            start: 'bottom bottom',
-            pin: width >= 1080,
-            pinSpacing: false,
-            scroller: document.querySelector('.wrapper'),
-            onEnterBack: () => goToSection(i)
-        })
-    })
-
     ScrollTrigger.create({
         snap: 1 / 4,
         scroller: document.querySelector('.wrapper')
