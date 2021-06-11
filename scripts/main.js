@@ -283,7 +283,7 @@ window.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger)
 
     ScrollTrigger.create({
-        snap: 1 / 4,
+        snap: 1 / 3,
         scroller: document.querySelector('.wrapper')
     })
 
