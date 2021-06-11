@@ -287,7 +287,7 @@ window.addEventListener('DOMContentLoaded', () => {
             trigger: panel,
             start: 'top top',
             pin: true,
-            pinSpacing: true,
+            pinSpacing: false,
             scroller: document.querySelector('.wrapper'),
             onEnterBack: () => goToSection(i)
         })
