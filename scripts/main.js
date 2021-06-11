@@ -56,10 +56,11 @@ window.addEventListener('DOMContentLoaded', () => {
         notifyButton = document.getElementById('newsletter-button'),
         arrowUp = document.getElementById('arrow-up'),
         arrowDown = document.getElementById('arrow-down'),
-        width = window.innerWidth
+        width = window.innerWidth,
+        wrapper = document.querySelector('.wrapper')
 
     function setSectionContent() {
-        const index = Math.round(window.scrollY / window.innerHeight)
+        const index = Math.round(wrapper.scrollTop / wrapper.clientHeight)
         setPhotoSignature(index)
         setArrows(index)
         pageState = {
@@ -95,7 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function goToSection(i, anim) {
-        gsap.to(window, {
+        gsap.to(wrapper, {
             scrollTo: {y: i*innerHeight, autoKill: false},
             duration: 1
         });
@@ -320,7 +321,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     notifyButton.addEventListener('click', toggleSubscriber)
 
-    window.addEventListener('scroll', setSectionContent)
+    wrapper.addEventListener('scroll', setSectionContent)
 
     if (subscriberInput) {
         subscriberInput.addEventListener('blur', handleValidate)
