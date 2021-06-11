@@ -235,19 +235,21 @@ body {
 	align-items: center;
 }
 
-.video__player {
-	width: 90%;
-	outline: none;
-	height: 100%;
-}
-
 .video__container {
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	max-width: 1200px;
 	height: auto;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.video__player {
+	width: 90%;
+	outline: none;
+	height: 100%;
 }
 
 /* ----- Footer ----- */
