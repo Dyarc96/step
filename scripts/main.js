@@ -55,12 +55,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const subscriber = document.getElementById('subscriber'),
         notifyButton = document.getElementById('newsletter-button'),
         arrowUp = document.getElementById('arrow-up'),
-        arrowDown = document.getElementById('arrow-down'),
-        width = window.innerWidth,
-        wrapper = document.querySelector('.wrapper')
+        arrowDown = document.getElementById('arrow-down')
 
     function setSectionContent() {
-        const index = Math.round(wrapper.scrollTop / wrapper.clientHeight)
+        const index = Math.round(window.scrollY / window.innerHeight)
         setPhotoSignature(index)
         setArrows(index)
         pageState = {
@@ -96,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function goToSection(i, anim) {
-        gsap.to(wrapper, {
+        gsap.to(window, {
             scrollTo: {y: i*innerHeight, autoKill: false},
             duration: 1
         });
@@ -283,8 +281,7 @@ window.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger)
 
     ScrollTrigger.create({
-        snap: 1 / 3,
-        scroller: document.querySelector('.wrapper')
+        snap: 1 / 4
     })
 
     subscriber.classList.add('hidden')
@@ -300,7 +297,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     notifyButton.addEventListener('click', toggleSubscriber)
 
-    wrapper.addEventListener('scroll', setSectionContent)
+    window.addEventListener('scroll', setSectionContent)
 
     if (subscriberInput) {
         subscriberInput.addEventListener('blur', handleValidate)
