@@ -287,7 +287,7 @@ window.addEventListener('DOMContentLoaded', () => {
             trigger: panel,
             start: 'top top',
             pin: width >= 1080,
-            pinSpacing: false,
+            pinSpacing: true,
             scroller: document.querySelector('.wrapper'),
             onEnterBack: () => goToSection(i)
         })
@@ -295,7 +295,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ScrollTrigger.create({
             trigger: panel,
             start: 'bottom bottom',
-            pin: width >= 1080,
+            pin: true,
             pinSpacing: false,
             scroller: document.querySelector('.wrapper'),
             onEnterBack: () => goToSection(i)
